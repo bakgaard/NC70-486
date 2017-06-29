@@ -1,0 +1,23 @@
+﻿@*Fully qualified name*@
+@model IEnumerable<MyPersonalWebsite.Models.InfomationModel>
+
+@*Without fully qualified name*@
+@*@using MyPersonalWebsite.Models;
+@model IEnumerable<InfomationModel>*@
+
+@{
+	Layout = "MiniMenu.cshtml";
+}
+
+<div class="row">
+	<div class="col-md-12">
+		<h1>The ViewDataDirectory</h1>
+		<p>This is from a ViewbagDirectory:</p>
+
+		<ul>
+			@foreach (var i in Model){
+				<li>@i.InformationA + @i.InformationB</li>
+			}
+		</ul>
+	</div>
+</div>

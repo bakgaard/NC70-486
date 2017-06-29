@@ -1,0 +1,14 @@
+﻿@{
+	Layout = "MiniMenu.cshtml";
+	var aNewNumber = ViewBag.Number + 42;
+}
+
+<div class="row">
+	<div class="col-md-12">
+		<h1>The Custom data</h1>
+		<p>It's just a small clause in the top of the .cshtml</p>
+
+		<p>Passed number: @ViewBag.Number</p>
+		<p>New number: @aNewNumber</p>
+	</div>
+</div>

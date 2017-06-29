@@ -1,0 +1,22 @@
+﻿@*Without fully qualified name*@
+@using MyPersonalWebsite.ViewModels;
+@model InfomationViewModel
+
+@{
+	Layout = "MiniMenu.cshtml";
+}
+
+
+<div class="row">
+	<div class="col-md-12">
+		<h1>The ViewModel</h1>
+		<p>This is from a ViewModel:</p>
+
+		<h3>@Model.Title</h3>
+		<ul>
+			@foreach (var i in Model.Infomation){
+				<li>@i.InformationA + @i.InformationB</li>
+			}
+		</ul>
+	</div>
+</div>

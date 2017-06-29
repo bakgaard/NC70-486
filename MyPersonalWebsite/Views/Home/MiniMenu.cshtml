@@ -1,0 +1,21 @@
+﻿@{ 
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+	<div class="col-md-12">
+		<h1>Chapter 3 - views</h1>
+		<p>In this chapter we talk about view:</p>
+		<ul>
+			<li><a asp-area="" asp-controller="Home" asp-action="TheViewBag">ViewBags</a></li>
+			<li><a asp-area="" asp-controller="Home" asp-action="TheViewData">ViewData</a></li>
+			<li><a asp-area="" asp-controller="Home" asp-action="TheViewDataDirectory">ViewDataDirectory</a></li>
+			<li><a asp-area="" asp-controller="Home" asp-action="TheViewModel">Viewmodels</a></li>
+			<li><a asp-area="" asp-controller="Home" asp-action="TheCustomData">Custom Data</a></li>
+		</ul>
+	</div>
+</div>
+
+<div>
+	@RenderBody()
+</div>

@@ -53,7 +53,7 @@ namespace MyPersonalWebsite
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Chapter3}/{action=Index}/{id?}");
             });
         }
     }

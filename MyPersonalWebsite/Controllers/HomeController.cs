@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace MyPersonalWebsite.Controllers
 {
-	public class HomeController : Controller
+	public class Chapter3Controller : Controller
 	{
 		public IActionResult Index()
 		{
